@@ -1,0 +1,52 @@
+@use "./gardevoir";
+@use "./general";
+
+
+
+
+
+header {
+  background-color: red;
+  height: 7rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 1px 1px 6px #444 ;
+}
+
+h1{
+  margin: 0;
+}
+
+.logo img{
+ height: 100%;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none
+}
+
+header nav a {
+  text-decoration: none;
+  display: block;
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+header nav a:hover {
+  background-color: #fff;
+  color: red ;
+}
+.navigator{
+  background-color: white;
+  height: 100%;
+}
+.user {
+  background-color: black;
+  height: 100%;
+}
+
+
+
+

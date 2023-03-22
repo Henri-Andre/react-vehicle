@@ -3,16 +3,35 @@
 
 
 
+// Header
+#root{
+  font-size: 62.5%;
+}
 
 
 header {
-  background-color: red;
-  height: 7rem;
+  background-image: url('../../public/img/bg_header.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+  height: 6rem;
+  line-height: 5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   box-shadow: 1px 1px 6px #444 ;
 }
+
+.logo {
+  height: 100%;
+  width: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+
+  
+}
+
 
 h1{
   margin: 0;
@@ -22,31 +41,69 @@ h1{
  height: 100%;
 }
 
+.navigator{
+  height: 100%;
+  width: 100%;
+}
+
 header nav ul {
   display: flex;
+  justify-content: space-around;
   list-style: none
 }
 
 header nav a {
   text-decoration: none;
-  display: block;
-  font-size: 1rem;
   padding: 1rem;
 }
 
-header nav a:hover {
-  background-color: #fff;
-  color: red ;
-}
 .navigator{
-  background-color: white;
-  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
 }
+
+.navigator a{
+  font-size: 1.1rem;
+  font-weight:600;
+  color: #ffffff;
+  transition: 0.4s;
+}
+
+.navigator a:hover {
+  background-color: #fff;
+  color: #333 ;
+}
+
+
+
 .user {
-  background-color: black;
+  background-color: rgb(197, 56, 31);
   height: 100%;
+  width: 30%;
+}
+
+.user a {
+  color: #ffffff;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.signIn{
+  text-align: center;
+  margin:0 auto;
+}
+
+.signIn form{
+  display: flex;
+  flex-direction:  column ;
+  justify-content: center;
+  align-items:center;
 }
 
 
-
-
+.signIn label{
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}

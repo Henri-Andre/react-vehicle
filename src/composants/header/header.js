@@ -1,5 +1,8 @@
 import React from 'react';
 import {NavLink} from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTruckPlane, faUserPlus} from '@fortawesome/free-solid-svg-icons';
+import ModalLogin  from '../login/ModalLogin';
 
 const Header = () => {
     return (
@@ -7,7 +10,9 @@ const Header = () => {
 
             <div  className="logo">
 
-                <NavLink to="/acceuil" ><img src="./../../public/img/logo.png"/></NavLink>
+                <NavLink to="/acceuil" ><img src="img/logo.png"/></NavLink>
+
+                <h1>Driver</h1>
             </div>
 
 
@@ -22,7 +27,7 @@ const Header = () => {
                     </li>
 
                     <li>
-                        <NavLink to="/contacte" >nous contacter</NavLink>
+                        <NavLink to="/contacte" >Contact</NavLink>
                     </li>
 
                     <li>
@@ -37,15 +42,20 @@ const Header = () => {
             <nav className='user'>
                 <ul>
                     <li>
-                        <NavLink to="/login" >logo connecter</NavLink>
+                        <ModalLogin/>
+                    
                     </li>
 
                     <li>
-                        <NavLink to="/sing-up" >logo inscrire</NavLink>
+                        <NavLink to="/sign-up" >
+                            <FontAwesomeIcon icon={faUserPlus} />sign-up
+                        </NavLink>
                     </li>
 
                     <li>
-                        <NavLink to="/contacte" >panier</NavLink>
+                        <NavLink to="/contacte" >
+                        <FontAwesomeIcon icon={faTruckPlane}/>Panier
+                        </NavLink>
                     </li>
 
 

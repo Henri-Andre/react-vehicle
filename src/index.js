@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom/client';
 import "./styles/_index.scss"
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter, Route, Routes} from "react-router-dom";
-import Home from "./page/Home";
+import Home from "./page/Home.js";
+import Sign_up from './page/Sign_up.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -12,7 +13,8 @@ root.render(
               <Routes>
 
                   <Route path='/acceuil' element={<Home/>}/>
-
+                  
+                  <Route path='/sign-up' element={<Sign_up/>}/>
 
 
 

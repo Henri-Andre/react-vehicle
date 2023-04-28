@@ -1,0 +1,51 @@
+
+
+.carousel {
+ 
+  position: relative;
+  
+
+    .thumbs{
+        text-align: center;
+    }
+
+    .carousel-status{
+        z-index: -1;
+    }
+
+    .overlay{
+        width: 100%;
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        top: 0%;
+        transform:translate(-100%);
+        left: 100%;
+        text-align: left;
+        padding: 2rem;
+        background: rgba(0, 0, 0,0.6);
+
+        a{
+            font-size: 1rem;
+            color: #fff;
+            border: 1px solid transparent;
+        };
+        a:hover{
+            text-decoration: underline;
+            background-color: transparent;
+        }
+    }
+
+    .slide img {
+        height:500px;
+    }
+
+    h3{
+        font-size: 2rem;
+
+    }
+
+   
+    
+  
+}

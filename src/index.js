@@ -1,27 +1,41 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import "./styles/_index.scss"
+import { Provider } from "react-redux";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import App from "./composants/app/App";
+import store from "./redux/store";
 import reportWebVitals from './reportWebVitals';
-import {BrowserRouter, Route, Routes} from "react-router-dom";
-import Home from "./page/Home.js";
-import Sign_up from './page/Sign_up.js';
+import Sign_up from './singup/Sign_up';
+import "./styles/_index.scss";
+import AddVehicle from './vehicule/AddVehicle';
+import Vehicule from './vehicule/Vehicule';
+import Contact from './contact/Contact';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+      <Provider store={store}>
+
         <BrowserRouter>
-              <Routes>
 
-                  <Route path='/acceuil' element={<Home/>}/>
-                  
-                  <Route path='/sign-up' element={<Sign_up/>}/>
+            <Routes>
 
+                <Route path='/' element={<App/>}/>
 
+                <Route path='/sign-up' element={<Sign_up/>}/>
 
+                <Route path='/vehicules' element={<Vehicule/>}/>
 
-              </Routes>
+                <Route path='/vehicules/add' element={<AddVehicle/>}/>
+
+                <Route path='/contact' element ={<Contact/>}/>
+
+            </Routes>
 
         </BrowserRouter>
+
+      </Provider>
   </React.StrictMode>
 );
 

@@ -1,35 +1,43 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-
-// définit l'état initial du reducer
-const initialState = {
-    user: null,
-    loading: false,
-    error: null,
-};
-
-// définit le slice du reducer avec des actions et des reducers automatiquement générés
-export  const userSlice = createSlice({
-    name: "user",
-    initialState,
+// Crée une tranche d'état pour les données de l'utilisateur
+const signupSlice = createSlice({
+    name: "signup",
+    initialState: {
+        name: "",
+        first_name: "",
+        email: "",
+        password: "",
+        confirmPassword: "",
+    },
     reducers: {
-        // action pour mettre à jour les informations de l'utilisateur
-        updateUser: (state, action) => {
-            state.user = action.payload;
+        // Réducteurs pour mettre à jour chaque champ de l'état
+        setName: (state, action) => {
+            state.name = action.payload;
         },
-        // action pour mettre à jour le statut de chargement
-        setLoading: (state, action) => {
-            state.loading = action.payload;
+        setFirstname: (state, action) => {
+            state.first_name = action.payload;
         },
-        // action pour mettre à jour l'erreur
-        setError: (state, action) => {
-            state.error = action.payload;
+        setEmail: (state, action) => {
+            state.email = action.payload;
+        },
+        setPassword: (state, action) => {
+            state.password = action.payload;
+        },
+        setConfirmPassword: (state, action) => {
+            state.confirmPassword = action.payload;
         },
     },
 });
 
-// exporte les actions automatiquement générées
-export const { updateUser, setLoading, setError } = userSlice.actions;
+// Exporte les réducteurs générés automatiquement par createSlice
+export const {
+    setName,
+    setFirstname,
+    setEmail,
+    setPassword,
+    setConfirmPassword,
+} = signupSlice.actions;
 
-// exporte le reducer
-export default userSlice.reducer;
+// Exporte la tranche d'état créée par createSlice
+export default signupSlice.reducer;

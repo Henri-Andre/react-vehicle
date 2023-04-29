@@ -16,7 +16,6 @@ const Slider = () => {
             const url = '/vehicles/all'
             const response = await getRequest(url);
             setData(response.result.data);
-            console.log(response.result);
           } catch (error) {
             console.error(error);
           }

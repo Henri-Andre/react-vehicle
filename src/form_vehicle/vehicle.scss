@@ -1,13 +1,13 @@
+
+
 .add-vehicle {
     display: flex;
     flex-direction: column;
     align-items: center;
   
     main {
-      width: 80%;
-      max-width: 600px;
-      margin-top: 2rem;
-    }
+      
+    
   
     .vehicle-form {
       display: flex;
@@ -24,7 +24,7 @@
       textarea,
       input[type="number"] {
         font-size: 1.2rem;
-        padding: 0.5rem;
+        padding: 1rem;
         border-radius: 4px;
         border: 1px solid #ccc;
         margin-bottom: 1rem;
@@ -49,6 +49,9 @@
         &:hover {
           background-color: #005FA3;
         }
+       }
       }
     }
   }
+
+

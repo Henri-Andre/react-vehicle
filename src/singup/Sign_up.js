@@ -17,7 +17,7 @@ import {
 const Sign_up = () => {
 
     const dispatch = useDispatch();
-  const signupData = useSelector((state) => state.signup);
+  const signupData = useSelector((store) => store.signup);
   const [errorMessage, setErrorMessage] = useState(null);
 
   const handleSubmit = async (event) => {
@@ -43,6 +43,7 @@ const Sign_up = () => {
 
     try {
       const response = await postRequest(url, { name, first_name, email, password });
+      window.location.replace(`http://localhost:3000`);
       console.log(signupData);
       // redirect to success page or display success message
     } catch (error) {

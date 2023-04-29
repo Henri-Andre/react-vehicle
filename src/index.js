@@ -7,8 +7,8 @@ import store from "./redux/store";
 import reportWebVitals from './reportWebVitals';
 import Sign_up from './singup/Sign_up';
 import "./styles/_index.scss";
-import AddVehicle from './vehicule/AddVehicle';
-import Vehicule from './vehicule/Vehicule';
+import AddVehicle from './form_vehicle/AddVehicle';
+import Vehicule from './card_vehicle/Vehicule';
 import Contact from './contact/Contact';
 
 

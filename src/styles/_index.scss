@@ -4,9 +4,10 @@
 @use "../composants/public/header.scss";
 @use "../composants/admin/hearder.scss";
 @use "../composants/footer/footer.scss";
-@use "../vehicule/vehicle.scss";
+@use "../form_vehicle/vehicle.scss";
 @use "../composants/slider/slider.scss";
 @use "../home/home.scss";
+@use "../card_vehicle/vehicules.scss";
 
 
 #root{

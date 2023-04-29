@@ -1,11 +1,10 @@
-import React, { useEffect, useState } from 'react';
-import { getRequest } from '../api/api';
+import React from 'react';
+import { NavLink } from 'react-router-dom';
 import AdminHeader from '../composants/admin/Header';
 import Footer from '../composants/footer/Footer';
 import PublicHeader from '../composants/public/Header';
-import { accountService } from '../service/account';
 import Slider from '../composants/slider/Slider';
-import { NavLink } from 'react-router-dom';
+import { accountService } from '../service/account';
 
 const Home = () => {
 
@@ -14,23 +13,6 @@ const Home = () => {
 
 
 
-    const [data, setData] = useState([]);
-
-    useEffect(() => {
-        const fetchData = async () => {
-          try {
-            const url = '/vehicles/all'
-            const response = await getRequest(url);
-            setData(response.result.data);
-            console.log(data);
-          } catch (error) {
-            console.error(error);
-          }
-        };
-        fetchData();
-      }, []);
-
-      console.log(data);
 
   
 

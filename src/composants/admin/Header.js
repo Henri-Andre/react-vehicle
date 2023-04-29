@@ -3,7 +3,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { accountService } from '../../service/account';
-import { getRequest } from '../../api/api';
 
 
 
@@ -25,7 +24,7 @@ const logout = async () =>{
         <header>
             <div  className="logo">
 
-                <NavLink to="/" ><img src="img/logo.png"/></NavLink>
+                <NavLink to="/" ><img src="/img/logo.png"/></NavLink>
 
             </div>
 
@@ -39,9 +38,9 @@ const logout = async () =>{
                     <li className="dropdown">
                         <NavLink to="/vehicules" >Nos véhicules</NavLink>
                         <div className="dropdown-content">
-                            <NavLink to="/vehicules/voiture">Voiture</NavLink>
-                            <NavLink to="/vehicules/moto">Moto</NavLink>
-                            <NavLink to="/vehicules/bateau">Bateau</NavLink>
+                            <NavLink to="/vehicles/type/2">Voiture</NavLink>
+                            <NavLink to="/vehicles/type/1">Moto</NavLink>
+                            
                         </div>
                      </li>
 

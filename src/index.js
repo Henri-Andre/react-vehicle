@@ -2,14 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Provider } from "react-redux";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Vehicule from './card_vehicle/Vehicule';
 import App from "./composants/app/App";
+import Contact from './contact/Contact';
+import AddVehicle from './form_vehicle/AddVehicle';
 import store from "./redux/store";
 import reportWebVitals from './reportWebVitals';
 import Sign_up from './singup/Sign_up';
 import "./styles/_index.scss";
-import AddVehicle from './form_vehicle/AddVehicle';
-import Vehicule from './card_vehicle/Vehicule';
-import Contact from './contact/Contact';
+import VehicleByType from './vehicleByType/VehicleByType';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -30,6 +31,8 @@ root.render(
                 <Route path='/vehicules/add' element={<AddVehicle/>}/>
 
                 <Route path='/contact' element ={<Contact/>}/>
+
+                <Route path='/vehicles/type/:type_id' element ={<VehicleByType/>}/>
 
             </Routes>
 

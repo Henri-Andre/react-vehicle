@@ -13,7 +13,7 @@ const Header = () => {
 
             <div  className="logo">
 
-                <NavLink to="/" ><img src="img/logo.png"/></NavLink>
+                <NavLink to="/" ><img src="/img/logo.png"/></NavLink>
 
                 
             </div>
@@ -28,9 +28,9 @@ const Header = () => {
                     <li className="dropdown">
                         <NavLink to="/vehicules" >Nos véhicules</NavLink>
                         <div className="dropdown-content">
-                            <NavLink to="/vehicules/voiture">Voiture</NavLink>
-                            <NavLink to="/vehicules/moto">Moto</NavLink>
-                            <NavLink to="/vehicules/bateau">Bateau</NavLink>
+                            <NavLink to="/vehicles/type/2">Voiture</NavLink>
+                            <NavLink to="/vehicles/type/1">Moto</NavLink>
+                            
                         </div>
                      </li>
 

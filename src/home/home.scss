@@ -30,7 +30,7 @@
 
 
             .comment{
-                display: flex ;
+                    text-align: center;
                 article{
                     padding: 1rem;
                     h4{
@@ -49,4 +49,28 @@
                 }
             }
         }   
+}
+
+@media (min-width: 1000px) {
+
+    .comment{
+        display: flex;
+        
+        article{
+            padding: 1rem;
+            h4{
+                font-size: 1rem;
+                text-align: center;
+            }
+            img{
+                margin: 1rem auto;
+                width: 250px;
+                height: 200px;
+                border-radius: 3rem;
+            }
+            p{
+                font-size: 0.7rem;
+            };
+        }
+    } 
 }

@@ -11,6 +11,7 @@ import reportWebVitals from './reportWebVitals';
 import Sign_up from './singup/Sign_up';
 import "./styles/_index.scss";
 import VehicleByType from './vehicleByType/VehicleByType';
+import VehiclesInfo from './vehicle_info/VehiclesInfo';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -26,13 +27,15 @@ root.render(
 
                 <Route path='/sign-up' element={<Sign_up/>}/>
 
-                <Route path='/vehicules' element={<Vehicule/>}/>
+                <Route path='/vehicles' element={<Vehicule/>}/>
 
-                <Route path='/vehicules/add' element={<AddVehicle/>}/>
+                <Route path='/vehicles/add' element={<AddVehicle/>}/>
 
                 <Route path='/contact' element ={<Contact/>}/>
 
                 <Route path='/vehicles/type/:type_id' element ={<VehicleByType/>}/>
+
+                <Route path='/vehicles_id/:id' element ={<VehiclesInfo/>}/>
 
             </Routes>
 

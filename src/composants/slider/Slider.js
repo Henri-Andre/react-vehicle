@@ -37,7 +37,7 @@ const Slider = () => {
                 <img src={'./img/' + slide.image} alt="" />
                 <div className="overlay">
                     <h3>{slide.vehicle}</h3>
-                    <NavLink to={'/vehicles/' + slide.id}>En Savoir</NavLink>  
+                    <NavLink to={'/vehicles_id/' + slide.id}>En Savoir</NavLink>  
                 </div>  
                 </article>                                          
             ))}

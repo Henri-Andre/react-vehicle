@@ -52,7 +52,7 @@ const VehicleByType = () => {
                     <h3>{vehicles.vehicle}</h3>
                     <p>{vehicles.price}</p>
                     <button>Acheter</button>
-                    <NavLink to={'/vehicles/' + vehicles.id}>En Savoir</NavLink>  
+                    <NavLink to={'/vehicles_id/' + vehicles.id}>En Savoir</NavLink>  
                 </article>                                          
                 ))}
 

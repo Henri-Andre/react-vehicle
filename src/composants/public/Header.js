@@ -1,11 +1,17 @@
-import { faTruckPlane, faUserPlus } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faUserPlus, faTruckPlane } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React from 'react';
+import React, { useState } from 'react';
 import { NavLink } from "react-router-dom";
 import ModalLogin from '../../login/ModalLogin';
 
 const Header = () => {
-        
+
+
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const handleMenuClick = () => {
+      setIsMenuOpen(!isMenuOpen);
+    };  
 
 
     return (
@@ -26,7 +32,7 @@ const Header = () => {
                     </li>
 
                     <li className="dropdown">
-                        <NavLink to="/vehicules" >Nos véhicules</NavLink>
+                        <NavLink to="/vehicles" >Nos véhicules</NavLink>
                         <div className="dropdown-content">
                             <NavLink to="/vehicles/type/2">Voiture</NavLink>
                             <NavLink to="/vehicles/type/1">Moto</NavLink>
@@ -39,31 +45,27 @@ const Header = () => {
                     </li>
 
                     <li>
-                        <NavLink to="/contacte" >À propos</NavLink>
+                        <div className="burger-menu">
+                            <FontAwesomeIcon icon={faBars} className="menu-icon" onClick={handleMenuClick} />
+                                {isMenuOpen && (
+                                    <nav className="menu-items">
+                                    <ul>
+                                        <li><ModalLogin/></li>
+                                        <li><NavLink to="/sign-up"><FontAwesomeIcon icon={faUserPlus} />sign-up</NavLink></li>
+                                        <li><NavLink to="/contacte"><FontAwesomeIcon icon={faTruckPlane}/>Panier</NavLink></li>
+                                    </ul>
+                                </nav>
+                            )}
+                        </div>
                     </li>
+
+
 
                 </ul>
 
             </nav>
 
-
-            <nav className="user">
-                <div className="burger-menu">
-                    <div className="burger-menu-icon">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    </div>
-                    <div className="burger-menu-items">
-                    <ul>
-                        <li><ModalLogin/></li>
-                        <li><NavLink to="/sign-up"><FontAwesomeIcon icon={faUserPlus} />sign-up</NavLink></li>
-                        <li><NavLink to="/contacte"><FontAwesomeIcon icon={faTruckPlane}/>Panier</NavLink></li>
-                    </ul>
-                    </div>
-                </div>
                 
-            </nav>
 
         </header>
     );

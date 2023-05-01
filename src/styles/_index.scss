@@ -8,10 +8,14 @@
 @use "../composants/slider/slider.scss";
 @use "../home/home.scss";
 @use "../card_vehicle/vehicules.scss";
+@use "../vehicle_info/vehiculeInfo.scss";
+
+
 
 
 #root{
   font-size: 62.5%;
+  --red: #a42626;
   
 }
 

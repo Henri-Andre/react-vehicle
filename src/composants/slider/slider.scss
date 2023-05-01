@@ -15,6 +15,7 @@
 
     .overlay{
         width: 100%;
+        height:30% ;
         position: absolute;
         display: flex;
         justify-content: space-between;
@@ -26,7 +27,7 @@
         background: rgba(0, 0, 0,0.6);
 
         a{
-            font-size: 1rem;
+            font-size: 1em;
             color: #fff;
             border: 1px solid transparent;
         };
@@ -35,13 +36,14 @@
             background-color: transparent;
         }
     }
+    
 
     .slide img {
-        height:500px;
+        width:100%;
     }
 
     h3{
-        font-size: 2rem;
+        font-size: 3rem;
 
     }
 

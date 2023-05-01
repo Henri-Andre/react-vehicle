@@ -5,7 +5,7 @@ import signUpSlice from "./reducers/signUp.slice";
 const store = configureStore({
     reducer: {
         signup: signUpSlice,
-        // Ajouter d'autres tranches d'état ici si nécessaire
+       
     },
 });
 

@@ -42,7 +42,7 @@ const logout = async () =>{
                 </li>
 
                 <li className="dropdown">
-                    <NavLink to="/vehicles" >Nos véhicules</NavLink>
+                    <NavLink to="/vehicles" >Véhicules</NavLink>
                     <div className="dropdown-content">
                         <NavLink to="/vehicles/type/2">Voiture</NavLink>
                         <NavLink to="/vehicles/type/1">Moto</NavLink>

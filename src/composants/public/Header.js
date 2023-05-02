@@ -32,7 +32,7 @@ const Header = () => {
                     </li>
 
                     <li className="dropdown">
-                        <NavLink to="/vehicles" >Nos véhicules</NavLink>
+                        <NavLink to="/vehicles" >Véhicules</NavLink>
                         <div className="dropdown-content">
                             <NavLink to="/vehicles/type/2">Voiture</NavLink>
                             <NavLink to="/vehicles/type/1">Moto</NavLink>
@@ -52,7 +52,7 @@ const Header = () => {
                                     <ul>
                                         <li><ModalLogin/></li>
                                         <li><NavLink to="/sign-up"><FontAwesomeIcon icon={faUserPlus} />sign-up</NavLink></li>
-                                        <li><NavLink to="/contacte"><FontAwesomeIcon icon={faTruckPlane}/>Panier</NavLink></li>
+                                        <li><NavLink to="/panier"><FontAwesomeIcon icon={faTruckPlane}/>Panier</NavLink></li>
                                     </ul>
                                 </nav>
                             )}

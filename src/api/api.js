@@ -25,6 +25,29 @@ const postRequest = async (url, body = {}, token = null) => {
     return await request(url, config);
 };
 
+
+const putRequest = async (url, body = {}, token = null) => {
+    const config = {
+        method: "PUT",
+        body: JSON.stringify(body),
+        headers: { "Content-type": "application/json; charset=UTF-8" },
+    };
+
+    if (token) config.headers.Authorization = token;
+
+    return await request(url, config);
+};
+const deleteRequest = async (url, token = null) => {
+    const config = {
+        method: "DELETE",
+        headers: { "Content-type": "application/json; charset=UTF-8" },
+    };
+
+    if (token) config.headers.Authorization = token;
+
+    return await request(url, config);
+};
+
 // Fonction générique pour effectuer une requête
 const request = async (url, config) => {
     let status = -1;
@@ -56,4 +79,4 @@ const handleResponse = (result, status, error) => {
 };
 
 // Exporte les fonctions pour les rendre accessibles depuis d'autres fichiers
-export { getRequest, postRequest };
+export { getRequest, postRequest, putRequest, deleteRequest };

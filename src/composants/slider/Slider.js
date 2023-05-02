@@ -34,7 +34,7 @@ const Slider = () => {
         <Carousel>
             {data.slice(0, 6).map((slide) => (
                 <article key={slide.id} className='slide'>
-                <img src={'./img/' + slide.image} alt="" />
+                <img src={'./img/' + slide.image} alt={slide.vehicle} />
                 <div className="overlay">
                     <h3>{slide.vehicle}</h3>
                     <NavLink to={'/vehicles_id/' + slide.id}>En Savoir</NavLink>  

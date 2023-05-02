@@ -1,5 +1,6 @@
 @use "./gardevoir";
 @use "./general";
+@use "../singup/sign_up.scss";
 @use "../login/modal.scss";
 @use "../composants/public/header.scss";
 @use "../composants/admin/hearder.scss";
@@ -21,11 +22,20 @@
 
 main{
   max-width: 1000px;
-  background-color: #fff;
+  background-color: #ecececef;
   margin:  2rem auto;
   min-height: 100vh;
   border-radius: 0.5rem;
   padding: 2rem;
+
+  h2{
+    border-bottom: 1px dashed var(--red);
+    width: 100%;
+    padding: 2rem;
+    text-align: left;
+    font-size: 2rem;
+    color: var(--red);
+  }
 }
 
 h1,h2,h3{

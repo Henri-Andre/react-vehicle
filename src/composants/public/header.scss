@@ -9,6 +9,8 @@
     height: 100;
     box-shadow: 1px 1px 6px #444 ;
     color: #fff;
+  
+
  
   
       .logo {
@@ -29,14 +31,16 @@
           height: 60px;
           width: 100%;
           background-color: rgba(0, 0, 0, 0.5);
+         
+          
 
         
         
         ul {
           display: flex;
-          flex-wrap: wrap;
           justify-content: space-around;
-          list-style: none
+          list-style: none;
+          margin-top: 1rem;
         }
 
 
@@ -74,8 +78,10 @@
           font-size: 1.5rem;
           font-weight:600;
           color: #ffffff;
-          transition: 0.4s;text-decoration: none;
-          padding: 1rem;
+          transition: 0.4s;
+          text-decoration: none;
+          padding: 0.8rem;
+  
          
         
         
@@ -103,7 +109,7 @@
         .menu-items {
           position: absolute;
           top:25%;
-          right: 10%;
+          right: 7%;
           background-color: #ffffff;
           border: 1px solid #333;
           border-radius: 5px;
@@ -145,25 +151,27 @@
  /* Responsive styles for tablet screens */
 
  
- @media only screen and (max-width: 768px) {
+ @media only screen and (min-width: 900px) {
 
 
 header{
-   d
-  
+  display: flex;
+  height: 150px;
 
 
   .navigator {
+    height: 100%;
+    justify-content: center;
+    
+    
     ul {
       font-size: 0.6rem;
-      flex-direction: column;
-      width: 100%;
-      background-color: #333;
+      
     }
 
     a {
-      padding: 0.5rem;
-      font-size: 1.1rem;
+      padding: 1rem;
+      font-size: 2rem;
     }
   }
 

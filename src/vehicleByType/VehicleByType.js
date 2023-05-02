@@ -21,20 +21,24 @@ const VehicleByType = () => {
             const url = `/vehicles/type/${type_id}`;
             const response = await getRequest(url);
             setData(response.result.data);
+            
           } catch (error) {
             console.error(error);
           }
         };
         fetchData();
       }, [type_id]);
-    
-          console.log(data);
-    
-    
-          const isLoggedIn = accountService.logged();
-    
+      
+            //console.log(data);
     
       
+          const isLoggedIn = accountService.logged();
+    
+          
+          const model = [...new Set(data.map(vehicle => vehicle.Type))];
+          const type = [...new Set(model.map(types => types.type))];
+;
+          console.log(type);
     
         
         return (
@@ -44,9 +48,12 @@ const VehicleByType = () => {
 
                 <main>
 
+                  <h2>Nos {type}</h2>
+
                 <section className='card_container'>
 
                 {data.map((vehicles) => (
+
                 <article key={vehicles.id} className='card_vehicle'>
                 <img src={'/img/' + vehicles.image} alt={vehicles.vehicle} />
                     <h3>{vehicles.vehicle}</h3>
@@ -56,7 +63,7 @@ const VehicleByType = () => {
                 </article>                                          
                 ))}
 
-</section>
+              </section>
 
 
                 </main>

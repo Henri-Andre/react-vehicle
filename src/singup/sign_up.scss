@@ -1,20 +1,13 @@
-
-
-.add-vehicle {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.signIn {
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 600px;
   
-    main {
-    
-      
-    
   
-    .vehicle-form {
+    form {
       display: flex;
       flex-direction: column;
-      padding: 2rem;
-      width: 100%;
+      justify-content: center;
   
       label {
         font-size: 1.2rem;
@@ -49,9 +42,12 @@
         &:hover {
           background-color: #005FA3;
         }
-       }
       }
     }
+  
+    p {
+      font-size: 1rem;
+      margin-top: 10px;
+      margin-bottom: 0;
+    }
   }
-
-

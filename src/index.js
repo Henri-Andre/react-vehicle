@@ -12,6 +12,7 @@ import Sign_up from './singup/Sign_up';
 import "./styles/_index.scss";
 import VehicleByType from './vehicleByType/VehicleByType';
 import VehiclesInfo from './vehicle_info/VehiclesInfo';
+import UserProfile from './user_profile/UserProfile';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -36,6 +37,8 @@ root.render(
                 <Route path='/vehicles/type/:type_id' element ={<VehicleByType/>}/>
 
                 <Route path='/vehicles_id/:id' element ={<VehiclesInfo/>}/>
+
+                <Route path='/profile' element ={<UserProfile/>}/>
 
             </Routes>
 

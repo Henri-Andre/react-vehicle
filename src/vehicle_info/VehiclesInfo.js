@@ -43,7 +43,7 @@ const VehiclesInfo = () => {
 
                     <main>
                     <section className='vehicleInfo'>
-                        <h2>{vehicles.vehicle}</h2>
+                        <h1>{vehicles.vehicle}</h1>
                         <img src={'/img/' + vehicles.image} alt={vehicles.vehicle} />
 
                         <strong>{vehicles.price} €</strong>

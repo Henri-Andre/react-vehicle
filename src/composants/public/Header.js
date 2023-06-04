@@ -7,11 +7,6 @@ import ModalLogin from '../../login/ModalLogin';
 const Header = () => {
 
 
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-    const handleMenuClick = () => {
-      setIsMenuOpen(!isMenuOpen);
-    };  
 
 
     return (
@@ -25,45 +20,47 @@ const Header = () => {
             </div>
 
 
-            <nav className='navigator'>
-                <ul>
-                    <li>
-                        <NavLink to="/" >Acceuil</NavLink>
-                    </li>
+           <div className="menu">
 
-                    <li className="dropdown">
-                        <NavLink to="/vehicles" >Véhicules</NavLink>
-                        <div className="dropdown-content">
-                            <NavLink to="/vehicles/type/2">Voiture</NavLink>
-                            <NavLink to="/vehicles/type/1">Moto</NavLink>
+
+                    <nav className='navigator'>
+                        <ul>
+                            <li>
+                                <NavLink to="/" >Acceuil</NavLink>
+                            </li>
+
+                            <li className="dropdown">
+                                <NavLink to="/vehicles" >Véhicules</NavLink>
+                                <div className="dropdown-content">
+                                    <NavLink to="/vehicles/type/2">Voiture</NavLink>
+                                    <NavLink to="/vehicles/type/1">Moto</NavLink>
+                                    
+                                </div>
+                            </li>
+
+                            <li>
+                                <NavLink to="/contact" >Contact</NavLink>
+                            </li>
+                        </ul>
+
+                    </nav>        
+
                             
-                        </div>
-                     </li>
+                    <div class="user-menu">
+                        <nav class="user">
+                            <ul>
+                                <li><ModalLogin/></li>
+                                <li><a href="/sign-up"><FontAwesomeIcon icon={faUserPlus} />Sign up</a></li>
+                            </ul>
+                        </nav>
+                    </div>
 
-                    <li>
-                        <NavLink to="/contact" >Contact</NavLink>
-                    </li>
-
-                    <li>
-                        <div className="burger-menu">
-                            <FontAwesomeIcon icon={faBars} className="menu-icon" onClick={handleMenuClick} />
-                                {isMenuOpen && (
-                                    <nav className="menu-items">
-                                    <ul>
-                                        <li><ModalLogin/></li>
-                                        <li><NavLink to="/sign-up"><FontAwesomeIcon icon={faUserPlus} />sign-up</NavLink></li>
-                                        <li><NavLink to="/panier"><FontAwesomeIcon icon={faTruckPlane}/>Panier</NavLink></li>
-                                    </ul>
-                                </nav>
-                            )}
-                        </div>
-                    </li>
+            </div> 
+                   
 
 
 
-                </ul>
-
-            </nav>
+             
 
                 
 

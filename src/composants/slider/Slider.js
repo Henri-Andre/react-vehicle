@@ -9,6 +9,7 @@ import { NavLink } from 'react-router-dom';
 const Slider = () => {
 
     const [data, setData] = useState([]);
+    const [currentSlide, setCurrentSlide] = useState(0);
 
     useEffect(() => {
         const fetchData = async () => {
@@ -25,23 +26,26 @@ const Slider = () => {
 
       console.log(data);
 
+    
 
-        
-   
+
     
     return (
 
-        <Carousel>
-            {data.slice(0, 6).map((slide) => (
-                <article key={slide.id} className='slide'>
-                <img src={'./img/' + slide.image} alt={slide.vehicle} />
-                <div className="overlay">
-                    <h3>{slide.vehicle}</h3>
-                    <NavLink to={'/vehicles_id/' + slide.id}>En Savoir</NavLink>  
-                </div>  
-                </article>                                          
-            ))}
-        </Carousel>
+      <Carousel>
+      {data.slice(data.length - 5, data.length).map((slide) => (
+        <article
+          key={slide.id}
+          className={`slide`}
+        >
+          <img src={'./img/' + slide.image} alt={slide.vehicle} />
+          <div className="overlay">
+            <h3>{slide.vehicle}</h3>
+            <NavLink to={'/vehicles_id/' + slide.id}>En Savoir plus</NavLink>
+          </div>
+        </article>
+      ))}
+    </Carousel>
 
        
         

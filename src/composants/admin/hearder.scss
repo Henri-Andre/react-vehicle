@@ -1,12 +1,179 @@
 header{
-    .btndc{
-        background-color: transparent;
-        border: transparent;
-        font-size: 1.5rem;
-        margin-top: 1rem;
+
+    .user-log{
+      width: 15%;
+       
         
-    }
-    .btndc:hover{
-        text-decoration: underline;
+        .user{
+            ul{
+                display: flex;
+                justify-content: space-between;
+                list-style: none;
+                li{
+                  a{
+                    svg{
+                      font-size:1.3em;
+                      padding: 0 0.5rem;
+                    }
+                    color: #ffffff;
+                    font-size:1rem;
+                    text-decoration: none;            
+                   }
+                }   
+
+                .burger-menu {
+                    position: relative;
+                    cursor: pointer;
+                  
+                    svg {
+                      font-size: 1.3rem;
+                    }
+                  
+                    .menu-items {
+                      position: absolute;
+                      top: 25px;
+                      right: -50px;
+                      background-color: #ffffff;
+                      padding: 1rem;
+                      border-radius: 4px;
+                      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                      z-index: 1;
+                      display: flex;
+                      flex-direction: column;
+                      justify-content: center;
+                      align-items: center;
+                  
+                      
+                  
+                      li {
+                        margin-bottom: 10px;
+                        
+                  
+                        a {
+                            display: flex;
+                            text-decoration: none;
+                            color: #333333;
+                            font-weight: 600;
+                  
+                             &:hover {
+                            color: #007bff;
+                            }
+                        }
+                  
+                        .btndc {
+                          padding: 5px 10px;
+                          background-color: #007bff;
+                          color: #ffffff;
+                          border: none;
+                          border-radius: 4px;
+                          cursor: pointer;
+                  
+                          &:hover {
+                            background-color: #0056b3;
+                          }
+                        }
+                      }
+                    }
+                  }
+
+            }
+            
     }
 }
+
+}
+
+
+@media only screen and (min-width: 900px) {
+
+  header{
+
+    .user-log{
+      width: 30%;
+      background-color: var(--red);
+      height: 100%;
+       
+        
+        .user{
+            ul{
+                justify-content: space-around;
+                list-style: none;
+                li{
+                  a{
+                    svg{
+                      font-size:2em;
+                      padding:  0.5rem;
+                    }
+                    color: #ffffff;
+                    font-size:1rem;
+                    text-decoration: none;            
+                   }
+                }   
+
+                .burger-menu {
+                    position: relative;
+                    cursor: pointer;
+                  
+                    svg {
+                      font-size: 2rem;
+                    }
+                  
+                    .menu-items {
+                      position: absolute;
+                      top: 75%;
+                      right: -50px;
+                      background-color: #ffffff;
+                      padding: 1rem;
+                      border-radius: 4px;
+                      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                      z-index: 1;
+                      display: flex;
+                      flex-direction: column;
+                      justify-content: center;
+                      align-items: center;
+                  
+                      
+                  
+                      li {
+                        margin-bottom: 10px;
+                        
+                  
+                        a {
+                          display: flex;
+                          text-decoration: none;
+                          color: #333333;
+                          font-weight: 600;
+                          transition: transform 0.3s ease;
+                  
+                             &:hover {
+                              color: #007bff;
+                              transform: scale(1.1);
+                            }
+                        }
+                  
+                        .btndc {
+                          padding: 5px 10px;
+                          background-color: #007bff;
+                          color: #ffffff;
+                          border: none;
+                          border-radius: 4px;
+                          cursor: pointer;
+                  
+                          &:hover {
+                            background-color: #0056b3;
+                          }
+                        }
+                      }
+                    }
+                  }
+
+            }
+            
+    }
+}
+
+}
+
+
+}
+   

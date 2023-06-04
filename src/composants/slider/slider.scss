@@ -3,15 +3,38 @@
 .carousel {
  
   position: relative;
+
+ 
   
 
-    .thumbs{
+        .thumbs{
         text-align: center;
-    }
+        padding: 0;
+         img{
+            padding: 0;
+            width: 100px;
+            height: 70px;
+        }
+        } 
 
     .carousel-status{
         z-index: -1;
     }
+    
+    .control-arrow{
+        height: 100%;
+        
+    }
+
+                        // .control-next {
+                        //     right: 15%;
+                        // }
+
+                        // .control-prev {
+                        //     left: 15%;
+                        // }
+
+    
 
     .overlay{
         width: 100%;
@@ -19,6 +42,7 @@
         position: absolute;
         display: flex;
         justify-content: space-between;
+        align-items: center;
         top: 0%;
         transform:translate(-100%);
         left: 100%;
@@ -27,7 +51,7 @@
         background: rgba(0, 0, 0,0.6);
 
         a{
-            font-size: 1em;
+            font-size:1em;
             color: #fff;
             border: 1px solid transparent;
         };
@@ -37,23 +61,96 @@
         }
     }
     
-
-    .slide{
-
-        h3{
-            font-size: 1rem;
-            padding:0;
+    .axis-horizontal{
+        height: 50%;
+        .slider{
+            max-height: 650px;
         }
-
-        img {
-            width:100%;
-        }
+        .slide{
+            
         
-    } 
+            article{
+                height: 100%;
+    
+            h3{
+                font-size: 1rem;
+                padding:0;
+                color: var(--red);
+            }
+    
+            img {
+                width: 100%;
+                height: 100%;
+                aspect-ratio: 16/10;
+              }
+
+            }
+            
+            
+        } 
+
+    }
+  
 
     
 
    
     
   
+}
+
+@media only screen and (min-width: 900px) {
+
+    
+    .carousel {
+ 
+        position: relative;
+
+        .overlay{
+          
+    
+            a{
+                font-size:1.2rem;
+                color: #fff;
+                border: 1px solid transparent;
+            };
+            a:hover{
+                text-decoration: underline;
+                background-color: transparent;
+            }
+        }
+
+        .axis-horizontal{
+            height: 50%;
+            .slide{
+                height: 100%;
+                article{
+                     
+        
+                h3{
+                    font-size: 2rem;
+                    padding:0;
+                    color: var(--red);
+                }
+    
+                }
+                
+                
+            } 
+    
+        }
+       
+        
+          
+         
+        
+      
+          
+      
+         
+          
+        
+      }
+
+
 }

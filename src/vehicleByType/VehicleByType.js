@@ -48,7 +48,7 @@ const VehicleByType = () => {
 
                 <main>
 
-                  <h2>Nos {type}</h2>
+                  <h1>Nos {type}</h1>
 
                 <section className='card_container'>
 

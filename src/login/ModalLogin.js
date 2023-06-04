@@ -1,6 +1,6 @@
 import { faUser } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { postRequest } from '../api/api';
 import { accountService } from '../service/account';
 
@@ -42,7 +42,7 @@ const ModalLogin = () => {
             // Stocker le jeton dans le stockage local
             accountService.saveToken(token)
 
-           window.location.replace(`http://localhost:3000`);
+            window.location.replace(`http://localhost:3000`);
             setLogget(true);
             console.log(token);
         }
@@ -53,6 +53,8 @@ const ModalLogin = () => {
         console.error("Une erreur s'est produite lors de la soumission du formulaire :", error);
     }
 };
+
+
 
 
 

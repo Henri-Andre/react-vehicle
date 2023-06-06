@@ -51,6 +51,11 @@
               background-color: #fff;
               color: #333;
             }
+
+            a:focus-within {
+              background-color: #fff;
+              color: #333;
+            }
           }
         } 
         
@@ -67,6 +72,14 @@
           align-items: center;
           margin-top: 0;
         }
+
+        .dropdown:focus-within .dropdown-content {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin-top: 0;
+        }
         
         .dropdown-content a {
           color: #333;
@@ -76,12 +89,17 @@
           flex-direction: row;
           width: 100px;
           background-color: #fff;
-          transition: background-color 0.3s, transform 0.3s; /* Added transition property */
+          transition: background-color 0.3s, transform 0.3s; 
         }
         
         .dropdown-content a:hover {
           background-color: var(--red);
-          transform: scale(1.1); /* Added transform property */
+          transform: scale(1.1); 
+        }
+
+        .dropdown-content a:focus-within {
+          background-color: var(--red);
+          transform: scale(1.1);
         }
           
           

@@ -49,7 +49,9 @@ const Header = () => {
                     <div class="user-menu">
                         <nav class="user">
                             <ul>
-                                <li><ModalLogin/></li>
+                                <li >
+                                    <ModalLogin/>
+                                </li>
                                 <li><a href="/sign-up"><FontAwesomeIcon icon={faUserPlus} />Sign up</a></li>
                             </ul>
                         </nav>

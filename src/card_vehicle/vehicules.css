@@ -1,0 +1,73 @@
+@charset "UTF-8";
+.card_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+.card_vehicle {
+  width: 260px;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+.card_vehicle:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+.card_vehicle img {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+.card_vehicle h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-family: "";
+}
+.card_vehicle p {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 10px;
+}
+.card_vehicle p::after {
+  content: "€";
+}
+.card_vehicle button {
+  display: inline-block;
+  background-color: #00bcd4;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.card_vehicle button:hover {
+  background-color: #0097a7;
+}
+.card_vehicle a {
+  display: inline-block;
+  background-color: #fff;
+  color: #00bcd4;
+  border: 2px solid #00bcd4;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-left: 10px;
+  transition: all 0.3s ease;
+}
+.card_vehicle a:hover {
+  background-color: #00bcd4;
+  color: #fff;
+}/*# sourceMappingURL=vehicules.css.map */

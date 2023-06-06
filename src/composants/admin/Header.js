@@ -15,6 +15,17 @@ const Header = () => {
       setIsOpen(!isOpen);
     };
 
+    const handleKeyDown = (event) => {
+        if (event.key === 'Enter') {
+            if (isOpen) {
+              setIsOpen(false);
+            } else {
+              setIsOpen(true);
+            }
+      }
+
+    }; 
+
       
 
 const logout = async () =>{
@@ -42,9 +53,9 @@ const logout = async () =>{
                     </li>
 
                     <li className="dropdown">
-                        <NavLink to="/vehicles" >Véhicules</NavLink>
-                        <div className="dropdown-content">
-                            <NavLink to="/vehicles/type/2">Voitures</NavLink>
+                        <NavLink to="/vehicles"  tabIndex={0} >Véhicules</NavLink>
+                        <div className="dropdown-content" tabIndex={1}>
+                            <NavLink to="/vehicles/type/2" >Voitures</NavLink>
                             <NavLink to="/vehicles/type/1">Motos</NavLink>
                             
                         </div>
@@ -64,7 +75,7 @@ const logout = async () =>{
                             
                     <nav className="user">
                         <ul>
-                        <div className="burger-menu">
+                        <div className="burger-menu" tabIndex={0} onKeyDown={handleKeyDown}>
                                 <FontAwesomeIcon icon={faUser} onClick={toggleMenu} />
 
                                 {isOpen && (
@@ -73,7 +84,7 @@ const logout = async () =>{
                                             <NavLink to="/profile">Mon Profil</NavLink>
                                         </li>
                                         <li>
-                                            <button onClick={logout} className="btndc">Se déconnecter</button>
+                                            <button onClick={logout} className="btndc" tabIndex={0}>Se déconnecter</button>
                                         </li>
                                     </ul>
                                 )}

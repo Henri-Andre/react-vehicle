@@ -1,0 +1,41 @@
+.vehicleInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.vehicleInfo h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.vehicleInfo img {
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 10px;
+}
+.vehicleInfo strong {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  padding: 2rem;
+}
+.vehicleInfo button {
+  display: inline-block;
+  background-color: #00bcd4;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 2rem;
+}
+.vehicleInfo button:hover {
+  background-color: #0097a7;
+}
+.vehicleInfo p {
+  font-size: 16px;
+  line-height: 1.5;
+  border: 2px solid #333;
+  border-radius: 2rem;
+  padding: 1.5rem;
+}/*# sourceMappingURL=vehiculeInfo.css.map */

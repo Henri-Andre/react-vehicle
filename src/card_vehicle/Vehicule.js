@@ -46,18 +46,18 @@ const Vehicule = () => {
         
                 <main>
 
-                <h2>Nos vehicules</h2>
+                <h1>Nos vehicules</h1>
 
 
                 <section className='card_container'>
 
                 {data.map((vehicles) => (
                 <article key={vehicles.id} className='card_vehicle'>
-                <img src={'./img/' + vehicles.image} alt="" />
+                <img src={'./img/' + vehicles.image} alt={vehicles.vehicle} />
                     <h3>{vehicles.vehicle}</h3>
                     <p>{vehicles.price}</p>
                     <button>Acheter</button>
-                    <NavLink to={'/vehicles_id/' + vehicles.id}>En Savoir</NavLink>  
+                    <NavLink to={'/vehicles_id/' + vehicles.id}>En savoir plus</NavLink>  
                 </article>                                          
                 ))}
 

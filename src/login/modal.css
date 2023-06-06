@@ -1,0 +1,94 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+.modal-content {
+  position: relative;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 0.25rem;
+  width: 50%;
+  max-width: 600px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.modal-content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+  text-align: center;
+}
+.modal-content p {
+  margin-top: 1rem;
+}
+.modal-content form {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.modal-content form label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #333;
+  text-align: center;
+  font-size: 1rem;
+}
+.modal-content form input {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #6c757d;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+}
+.modal-content form input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px #007bff;
+}
+.modal-content form button {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.modal-content form button:hover {
+  background-color: #0062cc;
+}
+.modal-content .closeLogin {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background-color: transparent;
+  color: #6c757d;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.btnLogin {
+  padding: 0.5rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.btnLogin:hover {
+  background-color: #0062cc;
+}
+
+.faUser {
+  margin-right: 0.5rem;
+}/*# sourceMappingURL=modal.css.map */

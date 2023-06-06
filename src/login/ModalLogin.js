@@ -1,6 +1,6 @@
 import { faUser } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { postRequest } from '../api/api';
 import { accountService } from '../service/account';
 
@@ -53,7 +53,11 @@ const ModalLogin = () => {
         console.error("Une erreur s'est produite lors de la soumission du formulaire :", error);
     }
 };
-
+const handleKeyDown = (event) => {
+  if (event.key === 'Enter') {
+    setShowModal(true);
+  }
+};
 
 
 
@@ -62,12 +66,12 @@ const ModalLogin = () => {
   
   
     return (
-      <div>
-        <a  onClick={() => setShowModal(true)}>
-          <FontAwesomeIcon icon={faUser} />Login 
+      <div >
+        <a  onClick={() => setShowModal(true)} tabIndex={0} onKeyDown={handleKeyDown}>
+          <FontAwesomeIcon icon={faUser}  />Login 
         </a>
-        {showModal && (
-          <div className="modal">
+        {showModal  && (
+          <div className="modal"> 
             <div className="modal-content">
               <h2>Login</h2>
 

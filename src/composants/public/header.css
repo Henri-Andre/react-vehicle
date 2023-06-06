@@ -1,0 +1,162 @@
+header {
+  background-image: url("../../../public/img/bg_header.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100;
+  box-shadow: 1px 1px 6px #444;
+  color: #fff;
+}
+header .logo {
+  height: 100%;
+  background-color: var(--red);
+  text-align: center;
+}
+header .logo img {
+  width: 150px;
+}
+header .menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+header .menu .navigator {
+  display: flex;
+  align-items: center;
+  width: 60%;
+}
+header .menu .navigator ul {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  list-style: none;
+  margin-top: 1rem;
+}
+header .menu .navigator ul li a {
+  border-bottom: 2px solid transparent;
+}
+header .menu .navigator ul li a:hover {
+  background-color: #fff;
+  color: #333;
+}
+header .menu .navigator .dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+header .menu .navigator .dropdown:hover .dropdown-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+}
+header .menu .navigator .dropdown-content a {
+  color: #333;
+  padding: 1rem;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  width: 100px;
+  background-color: #fff;
+  transition: background-color 0.3s, transform 0.3s; /* Added transition property */
+}
+header .menu .navigator .dropdown-content a:hover {
+  background-color: var(--red);
+  transform: scale(1.1); /* Added transform property */
+}
+header .menu .navigator a {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  transition: 0.4s;
+  text-decoration: none;
+  padding: 0.8rem;
+}
+header .menu .navigator a:hover {
+  background-color: #fff;
+  color: #333;
+}
+header .menu .user-menu {
+  width: 20%;
+}
+header .menu .user-menu nav.user ul {
+  display: flex;
+  justify-content: space-around;
+}
+header .menu .user-menu nav.user ul li {
+  list-style: none;
+}
+header .menu .user-menu nav.user ul li a {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+header .menu .user-menu nav.user ul li a svg {
+  font-size: 1.5rem;
+}
+
+@media only screen and (min-width: 900px) {
+  header {
+    display: flex;
+    height: 150px;
+  }
+  header .logo {
+    width: 30%;
+    height: 100%;
+    background-color: var(--red);
+    text-align: center;
+  }
+  header .logo img {
+    width: 150px;
+  }
+  header .menu {
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .menu .navigator {
+    height: 100%;
+    width: 100%;
+  }
+  header .menu .navigator ul {
+    font-size: 0.6rem;
+    justify-content: space-evenly;
+  }
+  header .menu .navigator .dropdown:hover .dropdown-content {
+    flex-direction: row;
+    margin-top: 0;
+  }
+  header .menu .navigator a {
+    padding: 1rem;
+    font-size: 2rem;
+  }
+  header .menu .navigator .dropdown-content a {
+    width: 180px;
+    line-height: 23px;
+  }
+  header .menu .user-menu {
+    width: 30%;
+    background-color: var(--red);
+    height: 100%;
+    justify-content: center;
+  }
+  header .menu .user-menu nav.user ul li {
+    list-style: none;
+    padding: 0;
+  }
+  header .menu .user-menu nav.user ul li a {
+    font-size: 1rem;
+    color: #fff;
+    text-decoration: none;
+  }
+  header .menu .user-menu nav.user ul li a svg {
+    font-size: 2.5rem;
+  }
+}/*# sourceMappingURL=header.css.map */

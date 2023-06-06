@@ -44,23 +44,23 @@ const Home = () => {
                     <h3>Comment ça marche</h3>
 
 
-                    <div className='comment' role="region" aria-label="Comment ça marche">
-
+                    <div className='comment'aria-label="Comment ça marche">
+ 
                         <article>
                             <h4>30 jours de Bonheurs</h4>
-                            <img src="./img/acceuil1.jpg" alt="Image 1 - 30 jours de Bonheurs" />
+                            <img src="./img/acceuil1.jpg" alt="Image  30 jours de Bonheurs" />
                             <p>Votre voiture, vous l’essayez 30 jours plutôt que 30 minutes en concession. Vous êtes satisfait intégralement ou remboursé intégralement.</p>
                         </article>
 
                         <article>
                             <h4>Où, quand et comme vous voulez</h4>
-                            <img src="./img/acceuil3.jpg" alt="Image 2 - Où, quand et comme vous voulez" />
+                            <img src="./img/acceuil3.jpg" alt="Image Où, quand et comme vous voulez" />
                             <p>Bien installé dans votre canapé, commandez votre voiture depuis notre site. Ou appelez-nous. Ou passez en agence. Tout est possible.</p>
                         </article>
 
                         <article>
                             <h4>Livraison en 48h</h4>
-                            <img src="./img/acceuil2.jpg" alt="Image 3 - Livraison en 48h" />
+                            <img src="./img/acceuil2.jpg" alt="Image  Livraison en 48h" />
                             <p>Votre voiture se commande en 1 clic et se reçoit en 2 jours. Chez vous.</p>
                         </article>
                     </div>

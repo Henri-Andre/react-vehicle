@@ -1,0 +1,62 @@
+.acceuil main {
+  text-align: center;
+}
+.acceuil main h3 {
+  font-size: 1.5rem;
+  padding: 2rem;
+}
+.acceuil main a {
+  font-size: 1rem;
+  cursor: pointer;
+  border: 1px solid #333;
+  text-decoration: none;
+  color: #333;
+  padding: 0.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.acceuil main a:hover {
+  background-color: #eb1f1f;
+  color: #fff;
+}
+.acceuil main .comment {
+  text-align: center;
+}
+.acceuil main .comment article {
+  padding: 1rem;
+}
+.acceuil main .comment article h4 {
+  font-size: 1rem;
+  text-align: center;
+}
+.acceuil main .comment article img {
+  margin: 1rem auto;
+  width: 250px;
+  height: 200px;
+  border-radius: 3rem;
+}
+.acceuil main .comment article p {
+  font-size: 0.7rem;
+}
+
+@media (min-width: 1000px) {
+  .comment {
+    display: flex;
+  }
+  .comment article {
+    padding: 1rem;
+  }
+  .comment article h4 {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .comment article img {
+    margin: 1rem auto;
+    width: 250px;
+    height: 200px;
+    border-radius: 3rem;
+  }
+  .comment article p {
+    font-size: 0.7rem;
+  }
+}/*# sourceMappingURL=home.css.map */

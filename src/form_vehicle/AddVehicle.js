@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { postRequest } from '../api/api';
 import Footer from '../composants/footer/Footer';
-import Header from '../composants/public/Header';
+import Header from '../composants/admin/Header';
 
 const AddVehicle = () => {
     const [vehicle, setVehicle] = useState("");

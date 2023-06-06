@@ -1,0 +1,132 @@
+header .user-log {
+  width: 15%;
+}
+header .user-log .user ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+header .user-log .user ul li a {
+  color: #ffffff;
+  font-size: 1rem;
+  text-decoration: none;
+}
+header .user-log .user ul li a svg {
+  font-size: 1.3em;
+  padding: 0 0.5rem;
+}
+header .user-log .user ul .burger-menu {
+  position: relative;
+  cursor: pointer;
+}
+header .user-log .user ul .burger-menu svg {
+  font-size: 1.3rem;
+}
+header .user-log .user ul .burger-menu .menu-items {
+  position: absolute;
+  top: 25px;
+  right: -35px;
+  background-color: #ffffff;
+  padding: 0.5rem;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header .user-log .user ul .burger-menu .menu-items li {
+  margin-bottom: 10px;
+}
+header .user-log .user ul .burger-menu .menu-items li a {
+  display: flex;
+  text-decoration: none;
+  color: #333333;
+  font-weight: 600;
+  font-size: 0.5rem;
+}
+header .user-log .user ul .burger-menu .menu-items li a:hover {
+  color: #007bff;
+}
+header .user-log .user ul .burger-menu .menu-items li .btndc {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  font-size: 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+header .user-log .user ul .burger-menu .menu-items li .btndc:hover {
+  background-color: #0056b3;
+}
+
+@media only screen and (min-width: 900px) {
+  header .user-log {
+    width: 30%;
+    background-color: var(--red);
+    height: 100%;
+  }
+  header .user-log .user ul {
+    justify-content: space-around;
+    list-style: none;
+  }
+  header .user-log .user ul li a {
+    color: #ffffff;
+    font-size: 1rem;
+    text-decoration: none;
+  }
+  header .user-log .user ul li a svg {
+    font-size: 2em;
+    padding: 0.5rem;
+  }
+  header .user-log .user ul .burger-menu {
+    position: relative;
+    cursor: pointer;
+  }
+  header .user-log .user ul .burger-menu svg {
+    font-size: 2rem;
+  }
+  header .user-log .user ul .burger-menu .menu-items {
+    position: absolute;
+    top: 75%;
+    right: -50px;
+    background-color: #ffffff;
+    padding: 0.5rem;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  header .user-log .user ul .burger-menu .menu-items li {
+    margin-bottom: 10px;
+  }
+  header .user-log .user ul .burger-menu .menu-items li a {
+    display: flex;
+    text-decoration: none;
+    color: #333333;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: transform 0.3s ease;
+  }
+  header .user-log .user ul .burger-menu .menu-items li a:hover {
+    color: #007bff;
+    transform: scale(1.1);
+  }
+  header .user-log .user ul .burger-menu .menu-items li .btndc {
+    padding: 5px 10px;
+    background-color: var(--red);
+    color: #ffffff;
+    border: none;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  header .user-log .user ul .burger-menu .menu-items li .btndc:hover {
+    background-color: #0056b3;
+  }
+}/*# sourceMappingURL=hearder.css.map */

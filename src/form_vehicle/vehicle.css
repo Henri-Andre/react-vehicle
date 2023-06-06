@@ -1,0 +1,41 @@
+.add-vehicle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.add-vehicle main .vehicle-form {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  width: 100%;
+}
+.add-vehicle main .vehicle-form label {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.add-vehicle main .vehicle-form input {
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+.add-vehicle main .vehicle-form textarea {
+  height: 150px;
+}
+.add-vehicle main .vehicle-form button {
+  background-color: #333;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.add-vehicle main .vehicle-form button:hover {
+  background-color: #005FA3;
+}/*# sourceMappingURL=vehicle.css.map */
